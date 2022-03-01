@@ -4,6 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
+    "build-storybook": "build-storybook -s public",
     "build": "react-scripts build",
     "cy-run-tests-with-no-failure": "cypress run --env failOnSnapshotDiff=false",
     "cy:open": "cypress open",
@@ -11,31 +12,53 @@
     "cy:run-tests-with-reporter": "cypress run --reporter cypress-image-snapshot/reporter",
     "cy:run-tests": "cypress run",
     "cy:update-snapshots": "cypress run --env updateSnapshots=true",
+    "deploy-storybook": "storybook-to-ghpages",
     "eject": "react-scripts eject",
     "start": "react-scripts start",
+    "storybook": "start-storybook -p 6006 -s public",
     "test": "react-scripts test --env=jsdom"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/runtime": "7.13.8"
+    "@babel/runtime": "7.13.8",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-interactions": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/node-logger": "^6.4.19",
+    "@storybook/preset-create-react-app": "^3.2.0",
+    "@storybook/react": "^6.4.19",
+    "@storybook/testing-library": "^0.0.9"
   },
   "dependencies": {
     "@percy/cli": "^1.0.0-beta.75",
     "@percy/cypress": "^3.1.1",
     "chromatic": "^6.5.1",
-    "cypress-image-snapshot": "^3.1.1",
     "cypress": "^5.1.0",
+    "cypress-image-snapshot": "^3.1.1",
     "prettier": "^2.1.1",
+    "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-scripts": "4.0.0",
-    "react": "17.0.2"
+    "react-scripts": "4.0.0"
   },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "eslintConfig": {
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  }
 }
