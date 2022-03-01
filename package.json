@@ -2,23 +2,40 @@
   "name": "cy-visual-tests",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "cy:open": "cypress open",
     "cy:run-tests": "cypress run",
     "cy:update-snapshots": "cypress run --env updateSnapshots=true",
     "cy:run-tests-with-reporter": "cypress run --reporter cypress-image-snapshot/reporter",
     "cy-run-tests-with-no-failure": "cypress run --env failOnSnapshotDiff=false",
-    "cy:percy": "percy exec -- cypress run"
+    "cy:percy": "percy exec -- cypress run",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "@babel/runtime": "7.13.8"
+  },
   "dependencies": {
     "@percy/cli": "^1.0.0-beta.75",
     "@percy/cypress": "^3.1.1",
+    "chromatic": "^6.5.1",
     "cypress": "^5.1.0",
     "cypress-image-snapshot": "^3.1.1",
-    "prettier": "^2.1.1"
-  }
+    "prettier": "^2.1.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-scripts": "4.0.0"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
