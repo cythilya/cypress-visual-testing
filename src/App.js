@@ -25,7 +25,7 @@ const App = ({ width, ...props }) => {
 };
 
 const WIDTH = {
-  SMALL: '150',
+  SMALL: '100',
   LARGE: '300',
 };
 
