@@ -10,10 +10,10 @@ const Template = (args) => <App {...args} />;
 
 export const LargeCat = Template.bind({});
 LargeCat.args = {
-    width: '600',
+    width: '300',
 };
 
 export const SmallCat = Template.bind({});
 SmallCat.args = {
-    width: '150',
+    width: '100',
 };
