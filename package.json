@@ -6,6 +6,7 @@
   "scripts": {
     "build-storybook": "build-storybook -s public",
     "build": "react-scripts build",
+    "chromatic": "npx chromatic --project-token=49b1054bad3a",
     "cy-run-tests-with-no-failure": "cypress run --env failOnSnapshotDiff=false",
     "cy:open": "cypress open",
     "cy:percy": "percy exec -- cypress run",
