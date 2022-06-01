@@ -17,10 +17,10 @@ jobs:
       - name: Install dependencies
         run: yarn
         # 👇 Adds Chromatic as a step in the workflow
-      - name: Deploy Storybook
+      - name: Build & Deploy Storybook
+        run: yarn build-storybook && yarn deploy-storybook
         env:
           token: '${{ secrets.GITHUB_TOKEN }}'
-        run: yarn deploy-storybook
       - name: Publish to Chromatic
         uses: chromaui/action@v1
         # Chromatic GitHub Action options
