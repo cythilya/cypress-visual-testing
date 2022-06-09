@@ -18,7 +18,7 @@
     "start": "react-scripts start",
     "storybook": "start-storybook -p 6006 -s public",
     "test": "react-scripts test --env=jsdom",
-    "snapshot": "build-storybook && percy-storybook --widths=320,1280"
+    "snapshot": "build-storybook && percy storybook ./storybook-static"
   },
   "keywords": [],
   "author": "",
