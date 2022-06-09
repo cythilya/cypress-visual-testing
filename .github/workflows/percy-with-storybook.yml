@@ -1,4 +1,4 @@
-name: CI
+name: Percy Test with Storybook
 on: push
 jobs:
   default:
