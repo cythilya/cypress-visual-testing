@@ -16,7 +16,6 @@ const App = ({ width, ...props }) => {
             <div className='card'>
               <img src={Cat} alt='愛看書的貓！' width={width} />
               <p>愛看書的貓不會變壞</p>
-              <p>愛看書的貓不會變壞</p>
             </div>
           </div>
         </main>
