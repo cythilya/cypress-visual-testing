@@ -1,5 +1,5 @@
 name: Percy Test with Storybook
-on: push
+on: [push, pull_request]
 jobs:
   default:
     runs-on: ubuntu-latest
