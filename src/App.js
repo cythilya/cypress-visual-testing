@@ -3,7 +3,6 @@ import './styles.css';
 import Cat from './kitty.png';
 
 const App = ({ width, ...props }) => {
-
   return (
     <div className='App'>
       <div className='container'>
@@ -15,6 +14,8 @@ const App = ({ width, ...props }) => {
           <div className='grid'>
             <div className='card'>
               <img src={Cat} alt='愛看書的貓！' width={width} />
+              <p>愛看書的貓不會變壞</p>
+              <p>愛看書的貓不會變壞</p>
               <p>愛看書的貓不會變壞</p>
               <p>愛看書的貓不會變壞</p>
               <p>愛看書的貓不會變壞</p>
