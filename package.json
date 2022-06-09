@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "build-storybook": "build-storybook -s public",
+    "percy-storybook-build": "percy storybook ./storybook-static",
     "build": "react-scripts build",
     "chromatic": "npx chromatic --project-token=49b1054bad3a",
     "cy-run-tests-with-no-failure": "cypress run --env failOnSnapshotDiff=false",
