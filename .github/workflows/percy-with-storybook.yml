@@ -1,5 +1,5 @@
 name: Percy Test with Storybook
-on: push
+on: [push, pull_request]
 jobs:
   default:
     runs-on: ubuntu-latest
@@ -10,5 +10,7 @@ jobs:
         run: yarn
       - name: Percy Test with Storybook
         uses: percy/storybook-action@v0.1.6
+        with:
+          custom-command: 'yarn storybook:percy'
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
