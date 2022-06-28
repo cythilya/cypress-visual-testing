@@ -19,27 +19,26 @@
     "start": "react-scripts start",
     "storybook": "start-storybook -p 6006 -s public",
     "test": "react-scripts test --env=jsdom",
-    "snapshot": "build-storybook && percy storybook ./storybook-static"
+    "storybook:percy": "build-storybook && percy storybook ./storybook-static"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/runtime": "7.13.8",
-    "@percy/cli": "^1.0.0-beta.56",
+    "@percy/cli": "1.4.0",
     "@percy/storybook": "^4.2.1",
-    "@storybook/addon-actions": "^6.4.19",
-    "@storybook/addon-essentials": "^6.4.19",
-    "@storybook/addon-interactions": "^6.4.19",
-    "@storybook/addon-links": "^6.4.19",
-    "@storybook/node-logger": "^6.4.19",
-    "@storybook/preset-create-react-app": "^3.2.0",
-    "@storybook/react": "^6.4.19",
-    "@storybook/storybook-deployer": "^2.8.10",
-    "@storybook/testing-library": "^0.0.9"
+    "@storybook/addon-actions": "^6.5.8",
+    "@storybook/addon-essentials": "^6.5.8",
+    "@storybook/addon-interactions": "^6.5.8",
+    "@storybook/addon-links": "^6.5.8",
+    "@storybook/node-logger": "^6.5.8",
+    "@storybook/preset-create-react-app": "^4.1.2",
+    "@storybook/react": "^6.5.8",
+    "@storybook/storybook-deployer": "^2.8.11",
+    "@storybook/testing-library": "^0.0.11"
   },
   "dependencies": {
-    "@percy/cli": "^1.3.0",
     "@percy/cypress": "^3.1.1",
     "chromatic": "^6.5.1",
     "cypress": "^5.1.0",

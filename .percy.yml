@@ -1,0 +1,9 @@
+version: 2
+storybook:
+  args: {}
+  queryParams: {}
+  waitForTimeout: 0
+  waitForSelector: ''
+  additionalSnapshots: []
+  include: []
+  exclude: []
